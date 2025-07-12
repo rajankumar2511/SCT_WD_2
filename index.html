@@ -183,7 +183,7 @@
     const lapBtn = document.getElementById("lap");
     const lapList = document.getElementById("lapList");
 
-    let lastLapTime = 0; // store total time in ms
+    let lastLapTime = 0;
 
     function getTotalMilliseconds() {
       return h * 3600000 + m * 60000 + s * 1000 + ms * 10;
@@ -224,7 +224,7 @@
 
     startBtn.onclick = () => {
       if (interval !== null) clearInterval(interval);
-      interval = setInterval(stopwatch, 10); // 10ms = 1/100 sec
+      interval = setInterval(stopwatch, 10); 
     };
 
     pauseBtn.onclick = () => {
